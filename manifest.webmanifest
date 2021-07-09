@@ -1,0 +1,25 @@
+{
+  "name": "ElistApp",
+  "short_name": "ElistApp",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#3E3E3E",
+
+  "theme_color": "#3E3E3E",
+  "categories": ["productivity", "shopping", "utilities"],
+  "description": "Share Grocery Lists",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/LauncherIcon-Light@0.5x.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

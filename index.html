@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="auther" content="ElistApp" />
+    <meta name="description" content="ElistApp" />
+    <meta name="keywords" content="ElistApp,shopping,grocery,list" />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="ElistApp" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" />
+
+    <title>ElistApp</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <style>
+      body {
+        background-color: #ececec;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 200pt;
+        background-image: url('icons/IconText-Adaptive@0.5x.png');
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #3e3e3e;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('flutter_service_worker.js');
+        });
+      }
+    </script>
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html>
